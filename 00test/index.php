@@ -6,13 +6,17 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pierwszy projekt php</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<h1>moja nowa strona</h1>
-<hr>
-<?php
-echo "<h2>Witaj świecie</h2>"
-?>
+<header>
+    <h1>Moja nowa strona</h1>
+</header>
+
+<section>
+    <?php
+    echo "<h2>Witaj świecie</h2>";
+    ?>
+</section>
 </body>
 </html>
