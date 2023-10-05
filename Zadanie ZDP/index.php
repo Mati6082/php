@@ -13,24 +13,24 @@
     <h1>Piekarnia Gaworzyce</h1>
 </header>
 <section>
-    <h2>Sklep internetowy</h2>
+    <h2 class="center-header">Sklep internetowy</h2>
     <section id="grid">
         <div id="chleb">
-            chleb
+            <p>chleb</p>
         </div>
         <div id="bułki">
-            bułki
+            <p>bułki</p>
         </div>
         <div id="bagietki">
-            bagietki
+            <p>bagietki</p>
         </div>
     </section>
 </section>
 <footer>
     <div id="left-footer">
         <h3>Kontakt:</h3>
-        <p>nr. telefonu: 123 456 789</p>
-        <p>e-mail: piekarnia@gaworzyce.pl</p>
+        <p>nr. telefonu: <span class="hover-underline">123 456 789</span></p>
+        <p>e-mail: <span class="hover-underline">piekarnia@gaworzyce.pl</span></p>
     </div>
     <div id="right-footer"><p>Mateusz Pakuła &copy; 2023</p></div>
 </footer>
