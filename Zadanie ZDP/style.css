@@ -29,23 +29,25 @@ header, footer {
 }
 
 header {
-    text-align: center;
-    position: sticky;
-    top: 0;
-    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
 }
 
 #koszyk {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    padding: 1rem;
-    text-align: right;
-    float: left;
+    height: 1rem;
+    transition: .5s all;
+}
+
+#koszyk img {
+    height: 2em;
 }
 
 #koszyk:hover {
-    text-decoration: underline white;
+    scale: 105%;
     cursor: pointer;
 }
 
@@ -66,16 +68,15 @@ footer {
 
 #grid {
     display: grid;
-    width: 80%;
     margin: 0 auto;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0 5rem 5rem;
 }
 
 #grid div {
     text-shadow: 0 0 1rem black;
     aspect-ratio: 1.5;
-    min-width: 25vw;
+    width: 27vw;
     background-position: center;
     background-size: cover;
     border-radius: 2rem;
@@ -92,9 +93,8 @@ footer {
 #grid div > h2 {
     scale: 0;
     text-align: center;
-    position: relative;
-    vertical-align: middle;
     transition: .5s all;
+    position: relative;
 }
 
 #grid div:hover > h2 {
@@ -135,4 +135,60 @@ footer {
 
 .cena {
     font-size: 50% !important;
+}
+
+#zamowienie {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -1000%);
+    background: var(--text);
+    color: var(--background);
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: .5s all ease;
+}
+
+#zamowienie h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 1rem 1rem 1rem;
+}
+
+table {
+    margin: 0 auto;
+}
+
+table, th, td {
+    border: 2px solid var(--background);
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: center;
+}
+
+#zamowienie button {
+    margin: 0 auto;
+}
+
+#technicalZamowienie {
+    visibility: hidden;
+    scale: 0;
+}
+
+#buttons-in-form {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0 0 0;
+}
+
+#buttons-in-form button {
+    margin: 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 2px solid var(--background);
+    background: var(--secondary);
+    color: var(--text);
 }
