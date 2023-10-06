@@ -4,19 +4,28 @@
     --primary: #ff8400;
     --secondary: #291f00;
     --accent: #f86c30;
+}
 
+@font-face {
+    font-family: "Gabarito";
+    src: url("Gabarito.ttf");
 }
 
 body {
     box-sizing: border-box;
+    font-family: Gabarito, sans-serif;
+    font-size: 150%;
     margin: 0;
     color: var(--text);
-    background-color: var(--background);
+    background-size: cover;
+    background: var(--background);
+    background-size: cover;
 }
 
 header, footer {
-    background: var(--primary);
+    background: var(--secondary);
     padding: 1rem;
+    text-shadow: 0 0 10px black;
 }
 
 header {
@@ -26,6 +35,7 @@ header {
 footer {
     display: flex;
     flex-direction: row;
+    font-size: 80%;
 }
 
 #right-footer {
@@ -39,23 +49,56 @@ footer {
 
 #grid {
     display: grid;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding: 0 5rem 5rem;
+}
+
+#grid div {
+    text-shadow: 0 0 1rem black;
+    aspect-ratio: 1.5;
+    min-width: 25vw;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2rem;
+    transition: .5s all;
+    box-shadow: inset 0 0 10vw rgb(0,0,0);
+}
+
+#grid div:hover {
+    scale: 105%;
+    box-shadow: inset 0 0 7vw rgb(0,0,0);
+}
+
+#grid div p {
+    text-transform: uppercase;
+    font-size: 150%;
+    margin: 0;
+    padding: 1rem 2rem;
+
 }
 
 #chleb {
-    min-height: 100px;
     grid-row: 1;
-    grid-column: 1;
-    background-image: url(chleb.png);
+    background-image: url(chleb.png) !important;
 }
+
 #bułki {
     grid-row: 1;
-    grid-column: 2;
-    background-image: url(bulka.png);
-    width: 100%;
-    height: 100%;
+    background-image: url(bulka.png) !important;
 }
+
 #bagietki {
     grid-row: 1;
-    grid-column: 3;
-    background-image: url(bagietka.png);
+    background-image: url(bagietka.png) !important;
+}
+
+.center-header {
+    text-align: center;
+}
+
+.hover-underline:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
