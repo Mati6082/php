@@ -30,6 +30,23 @@ header, footer {
 
 header {
     text-align: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#koszyk {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 1rem;
+    text-align: right;
+    float: left;
+}
+
+#koszyk:hover {
+    text-decoration: underline white;
+    cursor: pointer;
 }
 
 footer {
@@ -63,12 +80,25 @@ footer {
     background-size: cover;
     border-radius: 2rem;
     transition: .5s all;
-    box-shadow: inset 0 0 10vw rgb(0,0,0);
+    box-shadow: inset 0 0 10vw rgb(0, 0, 0);
 }
 
 #grid div:hover {
     scale: 105%;
-    box-shadow: inset 0 0 7vw rgb(0,0,0);
+    box-shadow: inset 0 0 7vw rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+#grid div > h2 {
+    scale: 0;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+    transition: .5s all;
+}
+
+#grid div:hover > h2 {
+    scale: 100%;
 }
 
 #grid div p {
@@ -101,4 +131,8 @@ footer {
 .hover-underline:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.cena {
+    font-size: 50% !important;
 }

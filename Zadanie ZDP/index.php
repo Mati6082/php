@@ -11,20 +11,27 @@
 <body>
 <header>
     <h1>Piekarnia Gaworzyce</h1>
+    <div id="koszyk">koszyk</div>
 </header>
 <section>
     <h2 class="center-header">Sklep internetowy</h2>
-    <section id="grid">
-        <div id="chleb">
-            <p>chleb</p>
-        </div>
-        <div id="bułki">
-            <p>bułki</p>
-        </div>
-        <div id="bagietki">
-            <p>bagietki</p>
-        </div>
-    </section>
+    <form action="main.php" method="post">
+        // TODO div na button submit and style
+        <section id="grid">
+            <div id="chleb">
+                <p>chleb <span class="cena">4.99/szt</span></p>
+                <h2>dodaj do koszyka</h2>
+            </div>
+            <div id="bułki">
+                <p>bułki <span class="cena">0.99/szt</span></p>
+                <h2>dodaj do koszyka</h2>
+            </div>
+            <div id="bagietki">
+                <p>bagietki <span class="cena">2.49/szt</span></p>
+                <h2>dodaj do koszyka</h2>
+            </div>
+        </section>
+    </form>
 </section>
 <footer>
     <div id="left-footer">
