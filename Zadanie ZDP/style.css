@@ -24,13 +24,16 @@ body {
 
 header, footer {
     background: var(--secondary);
-    padding: 1rem;
+    padding: 2rem;
     text-shadow: 0 0 10px black;
 }
 
 header {
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 header h1 {
@@ -40,6 +43,7 @@ header h1 {
 #koszyk {
     height: 1rem;
     transition: .5s all;
+    margin-right: 2rem;
 }
 
 #koszyk img {
@@ -71,6 +75,7 @@ footer {
     margin: 0 auto;
     justify-content: space-between;
     padding: 0 5rem 5rem;
+    gap: 2%;
 }
 
 #grid div {
@@ -141,7 +146,7 @@ footer {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -1000%);
+    transform: translate(-50%, -250vh);
     background: var(--text);
     color: var(--background);
     padding: 1rem;
@@ -191,4 +196,22 @@ th, td {
     border: 2px solid var(--background);
     background: var(--secondary);
     color: var(--text);
+    transition: .5s all;
+}
+
+#buttons-in-form button:focus, #buttons-in-form button:hover {
+    border: 2px solid var(--text);
+    outline: 1px solid var(--secondary);
+}
+
+#elementWiek {
+    margin: 0 auto;
+    width: fit-content;
+    padding-top: 1rem;
+}
+
+form input {
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 2px solid var(--background);
 }

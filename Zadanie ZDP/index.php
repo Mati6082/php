@@ -11,20 +11,20 @@
 <body>
 <header>
     <h1>Piekarnia Gaworzyce</h1>
-    <div id="koszyk" onclick="document.querySelector('#zamowienie').style.transform = 'translate(-50%, -50%)'"><img src="zamowienia.png" alt="koszyk"></div>
+    <div id="koszyk"><img src="zamowienia.png" alt="koszyk"></div>
 </header>
 <section>
     <h2 class="center-header">Sklep internetowy</h2>
     <section id="grid">
-        <div id="chleb" onclick="document.querySelector('#zamowienie').style.transform = 'translate(-50%, -50%)'">
+        <div id="chleb">
             <p>chleb <span class="cena">4,99zł/szt</span></p>
             <h2>dodaj do koszyka</h2>
         </div>
-        <div id="bułki" onclick="document.querySelector('#zamowienie').style.transform = 'translate(-50%, -50%)'">
+        <div id="bułki">
             <p>bułki <span class="cena">0,99zł/szt</span></p>
             <h2>dodaj do koszyka</h2>
         </div>
-        <div id="bagietki" onclick="document.querySelector('#zamowienie').style.transform = 'translate(-50%, -50%)'">
+        <div id="bagietki">
             <p>bagietki <span class="cena">2,49zł/szt</span></p>
             <h2>dodaj do koszyka</h2>
         </div>
@@ -42,7 +42,7 @@
 </footer>
 <div id="zamowienie">
     <h1>zamówienie</h1>
-    <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
+    <form action="main.php" method="post">
         <input id="technicalZamowienie" type="text" value="zamowienie" name="zamowienie">
         <table>
             <tr>
@@ -66,31 +66,16 @@
                 <td><input type="number" name="bagietki" value="0" min="0"></td>
             </tr>
         </table>
+        <div id="elementWiek">
+            <label for="wiek">Podaj wiek: </label><input type="number" name="wiek" id="wiek" min="0" value="18">
+        </div>
         <div id="buttons-in-form">
             <button type="submit">Zamów</button>
-            <button type="button" onclick="document.querySelector('#zamowienie').style.transform = 'translate(-50%, -1000%)'">Zamknij
+            <button type="button" id="zamknijZamowienie">Zamknij
             </button>
         </div>
     </form>
 </div>
-
-<?php
-$chleb = 0;
-$bulki = 0;
-$bagietki = 0;
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    if (isset($_POST['zamowienie']) && $_POST['zamowienie'] = "zamowienie") {
-
-        if (isset($_POST['chleb']) && is_numeric($_POST['chleb'])) $chleb = $_POST['chleb'];
-        if (isset($_POST['bułki']) && is_numeric($_POST['bułki'])) $bulki = $_POST['bułki'];
-        if (isset($_POST['bagietki']) && is_numeric($_POST['bagietki'])) $bagietki = $_POST['bagietki'];
-
-        echo "$chleb $bulki $bagietki";
-    } else {
-        $chleb += 1;
-    }
-}
-?>
+<script src="script.js"></script>
 </body>
 </html>
