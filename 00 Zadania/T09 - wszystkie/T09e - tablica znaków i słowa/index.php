@@ -43,7 +43,13 @@
             $dlugosc = $_POST['dlugosc'];
             $ilosc = $_POST['ilosc'];
 
-            var_dump($znaki);
+            for ($i = 0; $i < $ilosc; $i++) {
+                $wygenerowaneSlowo = "";
+                for ($j = 0; $j < $dlugosc; $j++) {
+                    $wygenerowaneSlowo += $znaki[rand(0, sizeof($znaki))];
+                }
+                echo "<p>$wygenerowaneSlowo</p>";
+            }
         }
     }
     ?>
