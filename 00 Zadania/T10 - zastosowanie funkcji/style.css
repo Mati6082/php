@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    background: rgb(35, 35, 45);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    text-align: center;
+    background: rgba(255, 255, 255, .1);
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1em;
+}
+
+section {
+    background: rgba(255, 255, 255, .0375);
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1em;
+}
+
+table, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 1rem;
+}
