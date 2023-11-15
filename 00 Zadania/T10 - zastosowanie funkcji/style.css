@@ -25,3 +25,15 @@ table, td {
     border-collapse: collapse;
     padding: 1rem;
 }
+
+#mniejsza {
+    color: green;
+}
+
+#wieksza {
+    color: red;
+}
+
+#rowne {
+    color: blue;
+}
