@@ -46,9 +46,11 @@
             for ($i = 0; $i < $ilosc; $i++) {
                 $wygenerowaneSlowo = "";
                 for ($j = 0; $j < $dlugosc; $j++) {
-                    $wygenerowaneSlowo += $znaki[rand(0, sizeof($znaki))];
+                    $maxIloscZnakow = sizeof($znaki) > 10 ? 9 : sizeof($znaki) - 1;
+                    $wygenerowaneSlowo .= $znaki[rand(0, $maxIloscZnakow)];
                 }
-                echo "<p>$wygenerowaneSlowo</p>";
+                $i1 = $i + 1;
+                echo "<p>Słowo $i1: $wygenerowaneSlowo</p>";
             }
         }
     }

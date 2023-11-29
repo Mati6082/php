@@ -3,6 +3,7 @@ body {
     background: rgb(35, 35, 45);
     color: white;
     font-family: Arial, sans-serif;
+    text-shadow: 0 0 10px black;
 }
 
 header, footer {
@@ -20,6 +21,13 @@ section {
     border-radius: 1em;
 }
 
-#zielona-niedziela {
+#green-sunday {
     background: green;
+}
+
+#colorful-day, #green-sunday {
+    font-size: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px black;
 }
