@@ -33,16 +33,12 @@
     </form>
     <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        function getdate() {
-            return explode(".", date("n.d.Y"));
-        }
 
         $dataTab = getdate();
-
         function wypiszDate(&$dataTab) {
-            $dzien = $dataTab[1];
-            $rok = $dataTab[2];
-            $miesiacL = $dataTab[0];
+            $dzien = $dataTab["mday"];
+            $rok = $dataTab["year"];
+            $miesiacL = $dataTab["mon"];
 
             $miesiac = match ($miesiacL) {
                 1 => "styczeń",
@@ -58,7 +54,11 @@
                 11 => "listopad",
                 12 => "grudzień",
             };
+
+                echo "$dzien $miesiac $rok";
         }
+        
+        wypiszDate($dataTab);
     }
     ?>
 </section>
