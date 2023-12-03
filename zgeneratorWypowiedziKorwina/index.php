@@ -158,7 +158,7 @@
         ];
 
         foreach ($teksty as $item) {
-            echo $item[rand(0, 5)];
+            echo $item[rand(0, sizeof($item) - 1)];
         }
         ?>
     </h1>
