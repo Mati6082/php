@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Light", sans-serif;
+    font-size: 150%;
+    color: #1c1c1c;
+    background: radial-gradient(white, black);
+    height: 100vh;
+    overflow: hidden;
+}
+
+#jkm-img {
+    height: 100vh;
+    float: left;
+}
+
+#wypowiedź {
+    margin: 0;
+    padding: 3em;
+}
