@@ -1,12 +1,14 @@
 <?php
-$plik = fopen('narodoweCzytanie.txt', "w");
+$sciezka = "narodoweCzytanie.txt";
 
 $tekst = "W TYM ROKU NARODOWE CZYTANIE POD HONOROWYM PATRONATEM PARY PREZYDENCKIEJ ODBĘDZIE SIĘ 08.09.2018 R. W STULECIE ODZYSKANIA NIEPODLEGŁOŚCI WYBRANO POWIEŚĆ STEFANA ŻEROMSKIEGO „PRZEDWIOŚNIE”.\nWŁĄCZAJĄC SIĘ DO OGÓLNOPOLSKIEJ AKCJI, ZAPRASZAMY DO WSPÓLNEGO CZYTANIA W NASZEJ SZKOLE W PRZEDDZIEŃ TEGO WYDARZENIA 07.09.2018 R.\nNA DRUGIEJ GODZINIE LEKCYJNEJ W AULI SZKOLNEJ . CZYTAĆ BĘDĄ UCZNIOWIE KLASY 2M.\nFORMUŁA SPOTKANIA NIE JEST ZAMKNIĘTA – KAŻDY MOŻE PRZYŁĄCZYĆ SIĘ do CZYTANIA LUB SŁUCHANIA.";
 
-fwrite($plik, $tekst);
+$file = fopen($sciezka, "w");
 
-$tekst = file('narodoweCzytanie.txt');
+fwrite($file, $tekst);
 
-foreach ($tekst as $item) {
-    echo "$item\n";
+function zapiszIOdczytaj($sciezka) {
+    echo nl2br(file_get_contents($sciezka));
 }
+
+zapiszIOdczytaj($sciezka);
