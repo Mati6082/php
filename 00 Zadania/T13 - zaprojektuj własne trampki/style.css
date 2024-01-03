@@ -1,0 +1,32 @@
+body {
+    background: antiquewhite;
+    color: saddlebrown;
+    font-family: Rubik, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header, footer, #wynik, form, #regulamin {
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1em;
+    background: rgba(0, 0, 0, .1);
+}
+
+header, footer, #wynik {
+    text-align: center;
+}
+
+input, textarea, button, fieldset {
+    border-radius: .5em;
+    padding: .5em;
+    margin: .5em;
+    border: solid 2px #888;
+}
+
+input, textarea, button {
+    background: antiquewhite;
+}
+
+legend {
+    padding: 0 .5em;
+}
