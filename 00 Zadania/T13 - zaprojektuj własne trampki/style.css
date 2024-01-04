@@ -5,7 +5,7 @@ body {
     margin: 0;
 }
 
-header, footer, #wynik, form, #regulamin {
+header, footer, #wynik, form, #regulamin, #raport {
     padding: 1em;
     margin: 1em;
     border-radius: 1em;
@@ -29,4 +29,12 @@ input, textarea, button {
 
 legend {
     padding: 0 .5em;
+}
+
+#zgloszenie-header {
+    text-align: center;
+}
+
+#raport-opis, #konfiguracja {
+    width: 60%;
 }

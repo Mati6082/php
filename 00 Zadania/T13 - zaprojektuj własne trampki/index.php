@@ -50,11 +50,11 @@
             </fieldset>
             <fieldset>
                 <legend>Opcje <i>(możesz wybrać kilka)</i></legend>
-                <input type="checkbox" name="sznurowki" id="sznurowki"><label for="sznurowki">Błyszczące
+                <input type="checkbox" name="sznurowki" id="sznurowki" value="błyszczące sznurówki"><label for="sznurowki">Błyszczące
                     sznurówki</label><br>
-                <input type="checkbox" name="logo" id="logo"><label for="logo">Metalowe logo</label><br>
-                <input type="checkbox" name="podeszwy" id="podeszwy"><label for="podeszwy">Świecące podeszwy</label><br>
-                <input type="checkbox" name="mp3" id="mp3"><label for="mp3">Odtwarzanie MP3</label><br>
+                <input type="checkbox" name="logo" id="logo" value="metalowe logo"><label for="logo">Metalowe logo</label><br>
+                <input type="checkbox" name="podeszwy" id="podeszwy" value="świecące podeszwy"><label for="podeszwy">Świecące podeszwy</label><br>
+                <input type="checkbox" name="mp3" id="mp3" value="odtwarzanie MP3"><label for="mp3">Odtwarzanie MP3</label><br>
             </fieldset>
             <fieldset>
                 <legend>Rozmiar</legend>
@@ -71,9 +71,5 @@
 <footer>
     <p>Mateusz Pakuła &copy; 2023</p>
 </footer>
-
-<?php
-
-?>
 </body>
 </html>
