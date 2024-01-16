@@ -87,7 +87,7 @@ button {
     transition: .35s;
 }
 
-button:hover {
+button:hover, button:focus {
     background: var(--background);
     color: var(--text);
     border: 2px solid var(--text);
