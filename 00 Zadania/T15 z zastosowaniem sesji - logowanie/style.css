@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #d3d3d3;
+    margin: 0;
+}
+
+#flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+#login-box {
+    background: #888888;
+    padding: 1em;
+    border-radius: 1em;
+    margin: 5em;
+}
+
+#main, #welcome {
+    text-align: center;
+}

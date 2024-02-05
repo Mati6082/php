@@ -2,9 +2,6 @@
 session_start();
 if (isset($_SESSION['log'])) {
     unset($_SESSION['log']);
-} else {
-    header('location: login.php');
-    exit();
 }
 $s = session_destroy();
 ?>
@@ -13,9 +10,14 @@ $s = session_destroy();
 <head>
     <title>Koniec sesji</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<p>Wylogowałeś się ze strony.</p>
-<a href="login.php">Logowanie</a>
+<div id="flex">
+    <div id="main">
+        <p>Wylogowałeś się ze strony.</p>
+        <a href="login.php">Logowanie</a>
+    </div>
+</div>
 </body>
 </html>
