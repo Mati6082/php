@@ -1,0 +1,3 @@
+0;Maciej;Nowak;maciek.nowak@gmail.com
+1;Antoni;Foremniak;antos@wp.pl
+2;Zofia;Wiśniewska;ksiezniczka_zosia@gmail.com
