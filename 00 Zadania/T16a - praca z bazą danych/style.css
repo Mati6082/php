@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 1em;
+    background: #292929;
+    color: #e3e1d3;
+    font-size: 110%;
+}
+
+table, td {
+    border: 3px solid #e3e1d3;
+    border-collapse: collapse;
+}
+
+td {
+    padding: .5em;
+    text-align: center;
+}
+
+thead td {
+    background: rgba(255, 255, 255, .1);
+}
+
+button {
+    background: #e3e1d3;
+    color: #333;
+    padding: .5em;
+    font-size: 1em;
+    transition: 250ms;
+}
+
+button:hover, button:focus {
+    background: #fff;
+    color: #000;
+}
+
+section {
+    padding: 1em;
+}
